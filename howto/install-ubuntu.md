@@ -186,7 +186,7 @@ USB 3.x を使用する場合、ゲストOSの設定でUSB 3.0コントローラ
 
 ### <a name="ubuntu_install">ゲストOS（Ubuntu）のインストール</a>
 
-<span style="font-size: 80%; align: right;"><a href="centos_install">CentOSのインストール</a></span>
+<!-- <span style="font-size: 80%; align: right;"><a href="centos_install">CentOSのインストール</a></span> -->
 
 ゲストOSを起動し、UbuntuのISOイメージを選択して`起動`をクリックするとUbuntuのインストーラーが起動します。
 
