@@ -1,5 +1,5 @@
 
-[Linux+コマンド入門 サポートページ](https://nisim-m.github.io/linuxcmdbook/) ～テスト環境 その1～
+[Linux+コマンド入門 サポートページ](https://nisim-m.github.io/linuxcmdbook/) ～学習用環境 その1～
 # VirtualBox + Ubuntu
 
 <!-- TOC -->
