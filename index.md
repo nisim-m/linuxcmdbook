@@ -23,4 +23,4 @@
 - 2021.4 サポートページ公開
 
 ----
-[Linux+コマンド入門 <small>——シェルとコマンドライン、基本の力</small> サポートページ](https://nisim-m.github.io/linuxcmdbook/)
+[Linux+コマンド入門 サポートページ](https://nisim-m.github.io/linuxcmdbook/)
