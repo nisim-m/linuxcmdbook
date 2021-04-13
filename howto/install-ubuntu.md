@@ -343,5 +343,6 @@ VirtualBoxでは、任意のタイミングでゲストOSの**スナップショ
 <a href="images\2021-04-12-03-13-18.png"><img src="images\2021-04-12-03-13-18.png" height="250"/></a>
 <div class="imgtitle">起動時の選択</div>
 <a href="images\2021-04-12-03-18-11.png"><img src="images\2021-04-12-03-18-11.png" width="300"/></a>
+
 ----
 [Linux+コマンド入門 <small>——シェルとコマンドライン、基本の力</small> サポートページ](https://nisim-m.github.io/linuxcmdbook/)
