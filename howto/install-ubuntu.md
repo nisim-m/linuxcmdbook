@@ -49,7 +49,7 @@ VistualBoxをインストールするOS（ホストOS）に合ったインスト
 
 インストール用のイメージファイルは下記のURLからダウンロードできます。
 
-https://jp.ubuntu.com/download 
+[https://jp.ubuntu.com/download](https://jp.ubuntu.com/download) 
 
 ※ここでは、Ubuntu Desktop 20.04.2.0 LTS（`ubuntu-20.04.2.0-desktop-amd64.iso`）を使用。
 
