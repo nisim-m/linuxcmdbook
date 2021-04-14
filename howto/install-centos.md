@@ -46,7 +46,7 @@ VistualBoxをインストールするOS（ホストOS）に合ったインスト
 
 CentOS Streamインストール用のイメージファイルは下記のURLからダウンロードできます。
 
-https://www.centos.org/centos-stream/
+[https://www.centos.org/centos-stream/](https://www.centos.org/centos-stream/)
 
 ※ここでは、CentOS-Stream-8-x86_64-20210302-dvd1.isoを使用。
 
