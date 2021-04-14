@@ -12,7 +12,7 @@
 ## テスト環境
 
 [VirtualBox+Ubuntu](howto/install-ubuntu.md)<br/>
-[VirtualBox+CentOS(準備中)]
+[VirtualBox+CentOS](howto/install-centos.md)
 
 ## 正誤表
 
