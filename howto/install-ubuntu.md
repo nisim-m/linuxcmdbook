@@ -1,35 +1,34 @@
 
-[Linux+コマンド入門 サポートページ](https://nisim-m.github.io/linuxcmdbook/) ～学習用環境 その1～
+[Linux+コマンド入門 サポートページ](https://nisim-m.github.io/linuxcmdbook/) ～学習用環境（irtualBox + Ubuntu）～
 # VirtualBox + Ubuntu
 
 <!-- TOC -->
 
-1. [ファイルのダウンロード](#ファイルのダウンロード)
-    1. [VirtualBox](#virtualbox)
-    2. [UbunutuのISOイメージ](#ubunutuのisoイメージ)
-    3. [CentOSのISOイメージ](#centosのisoイメージ)
-2. [VirtualBoxのインストール](#virtualboxのインストール)
-    1. [<a name="extpack">拡張パック</a>のインストール](#a-nameextpack拡張パックaのインストール)
-2. [仮想マシンの作成（Ubuntu/CentOS共通）](#仮想マシンの作成ubuntucentos共通)
-    1. [名前とオペレーションシステムの選択](#名前とオペレーションシステムの選択)
-    2. [メモリーサイズの入力](#メモリーサイズの入力)
-    3. [ハードディスクの作成](#ハードディスクの作成)
-    4. [<a name="portforwarding">ホストOSから接続するための設定（任意）</a>](#a-nameportforwardingホストosから接続するための設定任意a)
-    5. [USBの設定（任意）](#usbの設定任意)
-2. [<a name="ubuntuinstall">ゲストOS（Ubuntu）のインストール</a>](#a-nameubuntuinstallゲストosubuntuのインストールa)
-    1. [言語の選択](#言語の選択)
-    2. [インストール用の設定](#インストール用の設定)
-    3. [再起動](#再起動)
-    4. [再起動後の設定](#再起動後の設定)
-    5. [追加のインストールと更新](#追加のインストールと更新)
-    6. [更新後の再起動](#更新後の再起動)
-2. [Guest Additionsのインストール](#guest-additionsのインストール)
-3. [Ubuntuの設定](#ubuntuの設定)
-    1. [画面の解像度変更](#画面の解像度変更)
-    2. [クリップボードの共有](#クリップボードの共有)
-2. [スナップショットの活用](#スナップショットの活用)
-    1. [スナップショットの作成](#スナップショットの作成)
-    2. [スナップショットの復元](#スナップショットの復元)
+- [1.1. ファイルのダウンロード](#11-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)
+    - [1.1.1. VirtualBox](#111-virtualbox)
+    - [1.1.2. UbunutuのISOイメージ](#112-ubunutu%E3%81%AEiso%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8)
+- [1.2. VirtualBoxのインストール](#12-virtualbox%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+    - [1.2.1. <a name="extpack">拡張パック</a>のインストール](#121-a-nameextpack%E6%8B%A1%E5%BC%B5%E3%83%91%E3%83%83%E3%82%AFa%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+- [1.3. 仮想マシンの作成（Ubuntu/CentOS共通）](#13-%E4%BB%AE%E6%83%B3%E3%83%9E%E3%82%B7%E3%83%B3%E3%81%AE%E4%BD%9C%E6%88%90ubuntucentos%E5%85%B1%E9%80%9A)
+    - [1.3.1. 名前とオペレーションシステムの選択](#131-%E5%90%8D%E5%89%8D%E3%81%A8%E3%82%AA%E3%83%9A%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%81%B8%E6%8A%9E)
+    - [1.3.2. メモリーサイズの](#132-%E3%83%A1%E3%83%A2%E3%83%AA%E3%83%BC%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AE)
+    - [1.3.3. ハードディスクの](#133-%E3%83%8F%E3%83%BC%E3%83%89%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%81%AE)
+    - [1.3.4. <a name="portforwarding">ホストOSから接続するための設定（任意）</](#134-a-nameportforwarding%E3%83%9B%E3%82%B9%E3%83%88os%E3%81%8B%E3%82%89%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%A8%AD%E5%AE%9A%E4%BB%BB%E6%84%8F)
+    - [1.3.5. USBの設定（任意）](#135-usb%E3%81%AE%E8%A8%AD%E5%AE%9A%E4%BB%BB%E6%84%8F)
+- [1.4. <a name="ubuntu_install">ゲストOS（Ubuntu）のインストール</a>](#14-a-nameubuntu_install%E3%82%B2%E3%82%B9%E3%83%88osubuntu%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%ABa)
+    - [1.4.1. 言語の選択](#141-%E8%A8%80%E8%AA%9E%E3%81%AE%E9%81%B8%E6%8A%9E)
+    - [1.4.2. インストール用の設定](#142-%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E7%94%A8%E3%81%AE%E8%A8%AD%E5%AE%9A)
+    - [1.4.3. 再起動](#143-%E5%86%8D%E8%B5%B7%E5%8B%95)
+    - [1.4.4. 再起動後の設定](#144-%E5%86%8D%E8%B5%B7%E5%8B%95%E5%BE%8C%E3%81%AE%E8%A8%AD%E5%AE%9A)
+    - [1.4.5. 追加のインストールと更新](#145-%E8%BF%BD%E5%8A%A0%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E6%9B%B4%E6%96%B0)
+    - [1.4.6. 更新後の再起動](#146-%E6%9B%B4%E6%96%B0%E5%BE%8C%E3%81%AE%E5%86%8D%E8%B5%B7%E5%8B%95)
+- [1.5. Guest Additionsのインストール](#15-guest-additions%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+- [1.6. Ubuntuの設定](#16-ubuntu%E3%81%AE%E8%A8%AD%E5%AE%9A)
+    - [1.6.1. 画面の解像度変更](#161-%E7%94%BB%E9%9D%A2%E3%81%AE%E8%A7%A3%E5%83%8F%E5%BA%A6%E5%A4%89%E6%9B%B4)
+    - [1.6.2. クリップボードの共有](#162-%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97%E3%83%9C%E3%83%BC%E3%83%89%E3%81%AE%E5%85%B1%E6%9C%89)
+- [1.7. スナップショットの活用](#17-%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%81%AE%E6%B4%BB%E7%94%A8)
+    - [1.7.1. スナップショットの作成](#171-%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%81%AE%E4%BD%9C%E6%88%90)
+    - [1.7.2. スナップショットの復元](#172-%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%E3%81%AE%E5%BE%A9%E5%85%83)
 
 <!-- /TOC -->
 
@@ -53,14 +52,6 @@ VistualBoxをインストールするOS（ホストOS）に合ったインスト
 https://jp.ubuntu.com/download 
 
 ※ここでは、Ubuntu Desktop 20.04.2.0 LTS（`ubuntu-20.04.2.0-desktop-amd64.iso`）を使用。
-
-### CentOSのISOイメージ
-
-CentOS Streamインストール用のイメージファイルは下記のURLからダウンロードできます。
-
-https://www.centos.org/centos-stream/
-
-※ここでは、CentOS-Stream-8-x86_64-20210302-dvd1.iso
 
 ## VirtualBoxのインストール
 
@@ -105,16 +96,14 @@ VirtualBoxを実行し、`仮想マシン(M)`→`新規(N)`で仮想マシンを
 - 名前 … 任意
 - マシンフォルダー … 仮想マシンを保存する場所（任意）
 - タイプ … Linux
-- バージョン … Ubuntu (64-bit) または Red Hat (64-bit) 
+- バージョン … Ubuntu (64-bit) 
 
-※仮想マシンに`Ubuntu`あるいは`CentOS`を含んだ名前を付けると、タイプとバージョンが自動で設定される。
+※仮想マシンに`Ubuntu`を含んだ名前を付けると、タイプとバージョンが自動で設定される。
 
 <div class="imgtitle">Ubuntuの例</div>
 <a href="images\2021-04-11-23-54-20.png"><img src="images\2021-04-11-23-54-20.png" width="250"/></a>
-<div class="imgtitle">CentOSの例</div>
-<a href="images\2021-04-11-23-57-16.png"><img src="images\2021-04-11-23-57-16.png" width="250"/></a>
 
-###  メモリーサイズの入力
+###  メモリーサイズの
 
 ゲストOSに割り当てるメモリーのサイズを入力します。たくさん割り当てることでゲストOSが快適に動作するようになりますが、その分、ホストOSの動作が犠牲になります。  
 本書のサンプルを実行する場合、1024～2048MB程度で問題ありません。
@@ -122,7 +111,7 @@ VirtualBoxを実行し、`仮想マシン(M)`→`新規(N)`で仮想マシンを
 <div class="imgtitle">メモリーサイズ</div>
 <a href="images\2021-04-12-00-00-16.png"><img src="images\2021-04-12-00-00-16.png" width="250"/></a>
 
-###  ハードディスクの作成
+###  ハードディスクの
 
 1. `仮想ハードディスクを作成する(C)`（デフォルト）を選んで`作成`をクリック
 1. `VDI(VirtualBox Disk Image)`（デフォルト）を選んで`次へ(N)`をクリック
@@ -139,7 +128,7 @@ VirtualBoxを実行し、`仮想マシン(M)`→`新規(N)`で仮想マシンを
 <div class="imgtitle">ファイルの場所とサイズ</div>
 <a href="images\2021-04-12-00-06-45.png"><img src="images\2021-04-12-00-06-45.png" width="250"/></a>
 
-###  <a name="portforwarding">ホストOSから接続するための設定（任意）</a>
+###  <a name="portforwarding">ホストOSから接続するための設定（任意）</
 
 ホストOSからゲストOSのWebサーバーやSSHサーバーに接続してみたい場合は、下記を設定しておきます。
 ゲストOS（Ubuntu/CentOS）をインストールした後で設定することも可能です。
@@ -181,7 +170,7 @@ USB 3.x を使用する場合、ゲストOSの設定でUSB 3.0コントローラ
 
 ## <a name="ubuntu_install">ゲストOS（Ubuntu）のインストール</a>
 
-<!-- <span style="font-size: 80%; align: right;"><a href="centos_install">CentOSのインストール</a></span> -->
+<!-- <span style="font-size: 80%; align: right;"><a href="ubuntu_install">Ubuntuのインストール</a></span> -->
 
 ゲストOSを起動し、UbuntuのISOイメージを選択して`起動`をクリックするとUbuntuのインストーラーが起動します。
 
