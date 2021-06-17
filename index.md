@@ -18,7 +18,7 @@
 
 |ページ|内容|
 |-|-|
-|6.5 (p.196)|**1.太字部分を追加**<br>&nbsp;systemctl**はsystemdを操作するのに使うコマンドです。sytemd**はシステム全体の初期化などを担っている、すべてのプロセスの親となるプロセスです。最初に実行されるためプロセスIDは1になることから、`ps 1`で表示できます。<br>**2.systemctlをsystemdに訂正**<br>&nbsp;Ubuntu環境の場合、`ps 1`で`init`が表示されますが、`init`は`systemd`へのシンボリックリンクです。<br />|
+|6.5 (p.196)|<small>1.太字部分を追加</small><br>&nbsp;systemctl**はsystemdを操作するのに使うコマンドです。sytemd**はシステム全体の初期化などを担っている、すべてのプロセスの親となるプロセスです。最初に実行されるためプロセスIDは1になることから、`ps 1`で表示できます。<br><small>2.systemctlをsystemdに訂正</small><br>&nbsp;Ubuntu環境の場合、`ps 1`で`init`が表示されますが、`init`は`systemd`へのシンボリックリンクです。<br>|
 
 ## 履歴
 
