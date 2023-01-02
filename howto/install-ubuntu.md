@@ -132,7 +132,7 @@ VirtualBoxを実行し、`仮想マシン(M)`→`新規(N)`で仮想マシンを
 <div class="imgtitle">ファイルの場所とサイズ</div>
 <a href="images\2021-04-12-00-06-45.png"><img src="images\2021-04-12-00-06-45.png" width="250"/></a>
 
-###  <a name="portforwarding">ホストOSから接続するための設定（任意）</
+###  <a name="portforwarding">ホストOSから接続するための設定（任意）</a>
 
 ホストOSからゲストOSのWebサーバーやSSHサーバーに接続してみたい場合は、下記を設定しておきます。
 ゲストOS（Ubuntu/CentOS）をインストールした後で設定することも可能です。
