@@ -57,7 +57,7 @@ VistualBoxをインストールするOS（ホストOS）に合ったインスト
 
 VirtualBoxのインストーラーを実行し、画面に従ってインストールを行ってください。
 
-*※<a href="images\2023-01-02-17-16-54.png">“Oracle VM VirtualBox 7.X.X needs the Microsoft Visual C++ 2019 Redistributable Packaging being installed first.”のようなメッセージ</a>が表示された場合、Microsoftのサイトからダウンロードしてインストールしてください。（<a href="https://visualstudio.microsoft.com/ja/downloads/">https://visualstudio.microsoft.com/ja/downloads/</a> “Microsoft Visual C++ Redistributable for Visual Studio 2022”）*
+*※<a href="images\2023-01-02-17-16-54.png">“Oracle VM VirtualBox 7.X.X needs the Microsoft Visual C++ 2019 Redistributable Packaging being installed first.”のようなメッセージ</a>が表示された場合、Microsoftのサイトからダウンロードしてインストールしてください。（<a href="https://visualstudio.microsoft.com/ja/downloads/">https://visualstudio.microsoft.com/ja/downloads/</a> “Microsoft Visual C++ Redistributable for Visual Studio 2022” [画面例](howto/install-vcpp.md)）*
 
 <div class="imgtitle"></div>
 <a href="images\2021-04-11-23-29-45.png"><img src="images\2021-04-11-23-29-45.png" width="250"/></a>
