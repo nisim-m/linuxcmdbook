@@ -24,6 +24,7 @@
 
 - 2021.4 サポートページ公開
 - 2021.6.17 正誤表(p.196) 追加
+- 2023.1.2 VirtualBox 7.0 について追記 <small>（[Oracle VM VirtualBox 7.x.x needs the Microsoft Visual C++ 2019 Redistributable Packaging being installed first.”のようなメッセージが表示された場合](howto/install-vcpp.md)）, 解説はバージョン本書発売当時の6.1.18を使用していますが、基本的な表示や操作方法は共通です。</small>
 
 ----
 [Linux+コマンド入門 サポートページ](https://nisim-m.github.io/linuxcmdbook/)
