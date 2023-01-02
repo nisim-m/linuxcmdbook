@@ -2,5 +2,6 @@
 Microsoftのサイトからダウンロードしてインストールしてください。
 （<a href="https://visualstudio.microsoft.com/ja/downloads/">https://visualstudio.microsoft.com/ja/downloads/</a> “Microsoft Visual C++ Redistributable for Visual Studio 2022”）*
 
-<a href="images/2023-01-02-17-16-54.png"><img src="images/2023-01-02-17-16-54.png" width="180"></a>
-  
+<div class="imgtitle">メッセージ例</div>
+<a href="images/2023-01-02-17-16-54.png"><img src="images/2023-01-02-17-16-54.png" width="200"></a>
+
